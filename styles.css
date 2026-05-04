@@ -1,0 +1,126 @@
+:root {
+  --bg: #07111f;
+  --card: #111827;
+  --blue: #0b3c6d;
+  --blue2: #0f5fa8;
+  --text: #ffffff;
+  --muted: #cbd5e1;
+  --border: rgba(255,255,255,0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(15,95,168,0.35), transparent 40%),
+    linear-gradient(180deg, #07111f, #020617);
+  color: var(--text);
+}
+
+.install-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 16px;
+}
+
+.install-hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.install-badge {
+  background: #0b3c6d;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.install-hero h1 {
+  margin: 16px 0 8px;
+  font-size: 2.8rem;
+}
+
+.install-hero p {
+  color: var(--muted);
+}
+
+.install-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.install-card {
+  background: linear-gradient(180deg, #0f5fa8, #0b3c6d);
+  padding: 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.install-card:hover {
+  transform: translateY(-4px);
+}
+
+.install-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.install-card h2 {
+  margin: 10px 0;
+}
+
+.install-card p {
+  color: #e0f2fe;
+}
+
+.iphone-help {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.07);
+}
+
+.iphone-help h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.step {
+  background: rgba(255,255,255,0.08);
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.step p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .install-cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
